@@ -19,7 +19,7 @@ export default async function GetTenGames(): Promise<Genre[]> {
       body: JSON.stringify(request),
     })
   
-    console.log(response)
+    //console.log(response)
     const data: Genre[] = await response.json()
     return data;
   }

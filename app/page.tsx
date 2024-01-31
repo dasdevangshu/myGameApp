@@ -4,7 +4,7 @@ import SlidingWindows from './Components/SlidingWindows';
 
 export default async function Home() {
   return (
-    <main className='flex flex-col items-center w-screen h-screen'>
+    <main className='flex flex-col items-center w-full h-screen'>
       <Carousel />
       <SlidingWindows genre='fighting'/>
       <SlidingWindows genre='adventure'/>

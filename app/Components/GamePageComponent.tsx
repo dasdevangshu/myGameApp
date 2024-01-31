@@ -23,7 +23,7 @@ export default function GamePage(props : any) {
 
     return (
         <div className="h-full flex flex-col items-center">
-            <div className="w-screen bg-no-repeat bg-cover flex justify-center" style={{
+            <div className="w-full bg-no-repeat bg-cover flex justify-center" style={{
             backgroundImage: `url(${imgBG})`
             }}>
                 <div className=" pt-12 pb-12 w-3/5 max-w-5xl flex flex-col md:flex-row md:pt-40 gap-4 bg-slate-900 backdrop-filter backdrop-blur-md bg-opacity-20 px-4">

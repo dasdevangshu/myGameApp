@@ -45,7 +45,7 @@ export default function RootLayout({
       <body className={rubik.className + ' h-screen bg-slate-500 flex flex-col'}>
         <NavBar/>
         <NextTopLoader />
-        <div className='bg-slate-950 bg-opacity-75 flex-grow overflow-auto ' style={{backgroundImage: `url(${bgImageURL})`, backgroundSize: 'cover', backgroundBlendMode:'multiply'}}>
+        <div className='bg-slate-950 bg-opacity-75 flex-grow overflow-auto' style={{backgroundImage: `url(${bgImageURL})`, backgroundSize: 'cover', backgroundBlendMode:'multiply'}}>
           {children}
           <Analytics />
         </div>
