@@ -8,6 +8,7 @@ import GetGenres from '@/lib/GetGenres'
 // import GetPlatforms from '@/lib/GetPlatforms'
 // import GetCount from '@/lib/GetCount'
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] })
 const rubik = Rubik({ subsets: ['latin'] })
@@ -48,6 +49,7 @@ export default function RootLayout({
         <div className='bg-slate-950 bg-opacity-75 flex-grow overflow-auto' style={{backgroundImage: `url(${bgImageURL})`, backgroundSize: 'cover', backgroundBlendMode:'multiply'}}>
           {children}
           <Analytics />
+          <SpeedInsights />
         </div>
       </body>
     </html>
