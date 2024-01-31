@@ -11,7 +11,7 @@ export default async function GetTenGames(): Promise<Genre[]> {
       cache: 'no-cache'
     };
   
-    const response = await fetch('http://localhost:3001/api/proxy', {
+    const response = await fetch('https://my-game-app-proxy.vercel.app/api/proxy', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -19,6 +19,7 @@ export default async function GetTenGames(): Promise<Genre[]> {
       body: JSON.stringify(request),
     })
   
+    console.log(response)
     const data: Genre[] = await response.json()
     return data;
   }

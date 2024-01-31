@@ -16,7 +16,7 @@ export default async function GetHundredGames(props: any): Promise<GameForGamebo
       cache: 'no-cache'
     };
   
-    const response = await fetch('http://localhost:3001/api/proxy', {
+    const response = await fetch('https://my-game-app-proxy.vercel.app/api/proxy', {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
