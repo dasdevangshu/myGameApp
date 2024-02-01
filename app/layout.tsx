@@ -32,7 +32,7 @@ genreObj.forEach(item => {
 
 genreNames['games'] = 'All Games'
 
-const bgImageURL = 'https://images.igdb.com/igdb/image/upload/t_1080p/sc8gfc.png'
+const bgImageURL = 'https://images.igdb.com/igdb/image/upload/t_1080p/sc8gfc.webp'
 
 
 

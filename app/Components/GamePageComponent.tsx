@@ -9,8 +9,8 @@ import NoBG from '@/public/No_BG.png'
 export default function GamePage(props : any) {
     const data: GamesObj = props.GameData
 
-    const imgBG = data.screenshots === undefined ? NoBG.src : '"https://images.igdb.com/igdb/image/upload/t_1080p/' + data.screenshots[0].image_id + '.png"'
-    const imgCover = data.cover === undefined ? NoCover.src : 'https://images.igdb.com/igdb/image/upload/t_cover_big/' + data.cover.image_id + '.png'
+    const imgBG = data.screenshots === undefined ? NoBG.src : '"https://images.igdb.com/igdb/image/upload/t_1080p/' + data.screenshots[0].image_id + '.webp"'
+    const imgCover = data.cover === undefined ? NoCover.src : 'https://images.igdb.com/igdb/image/upload/t_cover_big/' + data.cover.image_id + '.webp'
 
 
     const genres = data.genres!== undefined? data.genres.map((item, index) => {

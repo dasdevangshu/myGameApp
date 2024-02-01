@@ -19,7 +19,7 @@ export default async function BeegCover(props: any) {
     const gamesProm: Promise<any> = GetGames(propObj)
     const game = await gamesProm
 
-    const imageUrl = 'https://images.igdb.com/igdb/image/upload/t_1080p/' + game[0].screenshots[0].image_id + '.jpg'
+    const imageUrl = 'https://images.igdb.com/igdb/image/upload/t_1080p/' + game[0].screenshots[0].image_id + '.webp'
 
     return (
         <div className="w-full flex justify-center mt-2">

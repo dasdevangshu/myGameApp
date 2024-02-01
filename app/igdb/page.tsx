@@ -8,7 +8,7 @@ export default function Igdb() {
         <div className="w-full flex flex-col items-center mt-1">
             <Link className='w-1/5 h-1/5 mt-4' href='https://api-docs.igdb.com'>
                 <div className=''>
-                    <Image src={IGDB} alt="IGDB Logo" className='text-white' />
+                    <Image unoptimized={true} src={IGDB} alt="IGDB Logo" className='text-white' />
                 </div>
             </Link>
             <Link className='w-1/5 h-1/5 mt-4' href='https://api-docs.igdb.com'>

@@ -7,7 +7,7 @@ export default function SearchItem(props: any) {
     const data: GameForSearch = props.gameData;
     const gameUrl = '/games/' + data.slug;
 
-    const imgCover = data.cover === undefined ? NoCover : 'https://images.igdb.com/igdb/image/upload/t_cover_big/' + data.cover.image_id + '.png'
+    const imgCover = data.cover === undefined ? NoCover : 'https://images.igdb.com/igdb/image/upload/t_cover_big/' + data.cover.image_id + '.webp'
 
     const genres = data.genres!== undefined? data.genres.map((item, index) => {
         return <Link key={index} href={'/' + item.slug}><h5 className="text-slate-400 hover:text-blue-500 mr-2">{item.name}</h5></Link>
@@ -18,7 +18,7 @@ export default function SearchItem(props: any) {
         <Link className="drop-shadow-md" href={gameUrl}>
         <div className=" w-36 md:w-full flex flex-col items-center md:items-start md:flex-row rounded-md gap-2 bg-slate-900 hover:outline drop-shadow-md hover:outline-blue-500 hover:outline-2 ease-in-out duration-300">
             <div className="h-48 w-36 relative flex-none overflow-hidden md:rounded-tl-md md:rounded-bl-md md:rounded-none rounded-tl-md rounded-tr-md">
-                <Image alt='cover image' fill={true} src={imgCover} className="flex-none"/>
+                <Image unoptimized={true} alt='cover image' fill={true} src={imgCover} className="flex-none"/>
             </div>
             
             <div className="flex flex-col grow w-full p-1">

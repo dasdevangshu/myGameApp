@@ -8,7 +8,7 @@ export default function ScreenshotSlider(props: any) {
     const [sendUrl, setSendUrl] = useState('')
 
     const data: Screenshots = props.screenshots
-    const images = data.map((item) => {return <img className="hover:cursor-pointer drop-shadow-md" key={item.id} onClick={() => {setSendUrl('https://images.igdb.com/igdb/image/upload/t_1080p/' + item.image_id + '.png');setIsVisible(true)}} src={'https://images.igdb.com/igdb/image/upload/t_1080p/' + item.image_id + '.png'}/>})
+    const images = data.map((item) => {return <img className="hover:cursor-pointer drop-shadow-md" key={item.id} onClick={() => {setSendUrl('https://images.igdb.com/igdb/image/upload/t_1080p/' + item.image_id + '.webp');setIsVisible(true)}} src={'https://images.igdb.com/igdb/image/upload/t_1080p/' + item.image_id + '.webp'}/>})
     
     return (
         <div className="w-full flex-none h-1/3 max-h-72 text-slate-100 font-bold text-3xl flex flex-col items-center ">

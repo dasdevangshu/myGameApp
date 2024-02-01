@@ -25,7 +25,7 @@ export default function CarouselClient(props: any) {
     <div className='w-3/5 max-w-5xl flex-none relative hover:outline drop-shadow-md hover:outline-blue-500 hover:outline-2 ease-in-out duration-300 rounded-lg overflow-hidden mt-2'>
         <Link href={`/games/${data[ind].slug}`}>
         <img 
-          src={'https://images.igdb.com/igdb/image/upload/t_1080p/' + data[ind].screenshots[0].image_id + '.png'} 
+          src={'https://images.igdb.com/igdb/image/upload/t_1080p/' + data[ind].screenshots[0].image_id + '.webp'} 
         />
         <h1 className='bottom-0 absolute text-slate-100 font-bold drop-shadow-md w-full px-4 py-4 bg-gradient-to-t from-black'>{data[ind].name}</h1>
         
