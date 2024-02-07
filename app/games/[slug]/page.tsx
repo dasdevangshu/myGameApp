@@ -1,3 +1,4 @@
+import { redirect } from 'next/navigation';
 import GetOneGame from '../../../lib/GetOneGameBySlug'
 import GamePageComponent from '../../Components/GamePageComponent'
 
@@ -7,7 +8,9 @@ export default async function GamePage({ params }: { params: { slug: string }}) 
 
     const gameObj: Promise<GamesObj> = GetOneGame(params.slug)
     const gameData = await gameObj
-
+    if (gameData === undefined) {
+        redirect('/search?query=' + params.slug);
+    }
     //console.log(params.games)
     return (
         <>
