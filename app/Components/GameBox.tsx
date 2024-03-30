@@ -13,7 +13,10 @@ export default function GameBox(props: any) {
             {/* <img className='h-48 w-36'
             src={coverUrl}
             /> */}
-            <Image unoptimized={true} alt='cover image' width={144} height={192} src={imgCover}/>
+            <div className='h-48 w-36 relative'>
+                <Image unoptimized={true} alt='cover image' fill={true} src={imgCover}/>
+            </div>
+            
             <h1 className='mx-2 mb-1 text-slate-400 font-bold text-sm truncate'>{gameData.name}</h1>
         </div>
         </Link>
