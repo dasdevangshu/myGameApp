@@ -1,6 +1,6 @@
 'use client'
 import { Inter, Rubik } from 'next/font/google'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 
@@ -11,6 +11,10 @@ export default function Searchbar() {
     const [query, setQuery] = useState('')
     const condition = query !== ''? '' : 'pointer-events-none'
     const router = useRouter()
+
+    useEffect(() => {
+        setQuery('')
+    }, [])
 
     return (
         <div className='flex gap-2 items-center justify-center'>
